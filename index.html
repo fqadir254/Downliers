@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Downliers.pk</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com  crossorigin" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />  
+</head>
+<body>
+    <!--Logo-->
+    <div class="logo">
+        <img src="logo/logo.PNG" />
+    </div>
+    <!--logo end-->
+
+     <!--Header-->
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products.html">Products</a> </li>
+                <li><a href="team.html">Team</a> </li>
+                <li> <a href="blog.html"> Blog</a></li>
+                <li> <a href="contact"> Contact Us</a></li>
+                <li> <a href="About"> About us</a></li>
+            </ul>
+                    </div>
+    </nav>
+    <!--Header end-->
+    <!--Banner-->
+    <div class="banner">
+        <div class="text-block">
+            <h1>Excellence of selling products</h1>
+            <p> We will give you best products at reasonable prices<br /> We have large amount of products categories </p>
+            <a href="#" class="btn-primary"> Shop Now </a>
+        </div>
+    </div>
+    <div class="audio">
+    <h1> Text to Speech Converter</h1>
+            <textarea id="textbox"  rows="4"></textarea><br />
+        <button class="speak" id="speakbtn" onclick="speak()">Speak</button>
+    </div>
+        <script>
+        function speak() {
+            let synth = window.speechSynthesis
+            let voice = new SpeechSynthesisUtterance(`${textbox.value}`)
+            synth.speak(voice)
+                    }
+    </script>
+    <!--Banner close-->
+</body>
+</html>
